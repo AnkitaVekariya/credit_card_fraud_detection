@@ -5,4 +5,4 @@ seaborn
 sklearn
 SMOTE
 xgboost
-stramlit
+streamlit
