@@ -20,8 +20,8 @@ This project detects fraudulent credit card transactions using machine learning.
 ## Models & Performance
 | Model | Precision | Recall | Accuracy | ROC-AUC |
 |--------|------------|--------|------------|------------|
-| Logistic Regression | 0.9744 | 0.9223 | 0.9489 | 0.9490 |
 | Random Forest | 0.9998 | 1.0000 | 0.9999 | 0.9999 |
+| Logistic Regression | 0.9744 | 0.9223 | 0.9489 | 0.9490 |
 | XGBoost | 0.9995 | 1.0000 | 0.9997 | 0.9997 |
 
 ## Conclusion
