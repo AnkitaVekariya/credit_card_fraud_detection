@@ -6,27 +6,23 @@ This project detects fraudulent credit card transactions using machine learning.
 ## Files
 - **EDA.ipynb** - Exploratory Data Analysis (EDA)
 - **model.ipynb** - Model training and evaluation
+- **app.py** - Streamlit app for fraud detection
 
-## Key Insights
-- **Class Imbalance**: Fraud cases are rare.
-- **Transaction Amount**: Fraudulent transactions tend to be smaller.
-- **Feature Correlation**: Some PCA features strongly correlate with fraud.
+## How to Use
+### 1. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 
-## Preprocessing
-- **Feature Scaling**: StandardScaler applied to `Time` and `Amount`.
-- **Handling Imbalance**: **SMOTE** used to balance data.
-- **Train-Test Split**: 70% training, 30% testing.
+### 2. Run the Streamlit App
+```bash
+streamlit run app.py
+```
 
-## Models & Performance
-| Model | Precision | Recall | Accuracy | ROC-AUC |
-|--------|------------|--------|------------|------------|
-| Random Forest | 0.9998 | 1.0000 | 0.9999 | 0.9999 |
-| Logistic Regression | 0.9744 | 0.9223 | 0.9489 | 0.9490 |
-| XGBoost | 0.9995 | 1.0000 | 0.9997 | 0.9997 |
+### 3. Use the App
+- **Upload CSV**: Select a CSV file for batch fraud detection.
+- **Manual Input**: Enter transaction details to check for fraud.
+- **View Results**: Predictions and visualizations will be displayed.
 
-## Conclusion
-- **SMOTE improves recall** for fraud detection.
-- **Future Work**: Feature engineering, hyperparameter tuning, anomaly detection.
-
-🔗 **Dataset**: [Kaggle - Credit Card Fraud Detection](https://www.kaggle.com/mlg-ulb/creditcardfraud)
-
+## Dataset
+🔗 [Kaggle - Credit Card Fraud Detection](https://www.kaggle.com/mlg-ulb/creditcardfraud)
