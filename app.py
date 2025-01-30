@@ -8,10 +8,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 
-# Title
 st.title("Credit Card Fraud Detection")
 
-# File Uploader
 df = None
 uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
 if uploaded_file:
@@ -24,9 +22,6 @@ if df is not None:
     df['Time_Scaled'] = scaler.fit_transform(df['Time'].values.reshape(-1, 1))
     df['Amount_Scaled'] = scaler.fit_transform(df['Amount'].values.reshape(-1, 1))
     df.drop(['Time', 'Amount'], axis=1, inplace=True)
-    
-    st.write("### Class Distribution")
-    st.bar_chart(df['Class'].value_counts())
     
     X = df.drop(['Class'], axis=1)
     y = df['Class']
