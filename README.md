@@ -9,17 +9,23 @@ This project detects fraudulent credit card transactions using machine learning.
 - **app.py** - Streamlit app for fraud detection
 
 ## How to Use
-### 1. Install Dependencies
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/credit_fraud_streamlit.git
+cd credit_fraud_streamlit
+```
+
+### 2. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Run the Streamlit App
+### 3. Run the Streamlit App
 ```bash
 streamlit run app.py
 ```
 
-### 3. Use the App
+### 4. Use the App
 - **Upload CSV**: Select a CSV file for batch fraud detection.
 - **Manual Input**: Enter transaction details to check for fraud.
 - **View Results**: Predictions and visualizations will be displayed.
